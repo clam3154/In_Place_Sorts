@@ -8,12 +8,12 @@ public class InPlaceSorts
         {
             swapPosition = i;
             min = list1[i];
+            int temp = min;
             for(int x = i-1; x>0; x--)
             {
-                if(list1[x]>min)
+                if(list1[x]>temp)
                 {
-                    int temp = min;
-                    min = list1[x];
+                    list1[x+1] = list1[x];
                     list1[x] = temp;
                     swapPosition = x;
                 }
