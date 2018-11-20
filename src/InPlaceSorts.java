@@ -2,11 +2,9 @@ public class InPlaceSorts
 {
     public static void insertionSort(int[] list1)
     {
-        int swapPosition = 0;
         int min = 0;
         for(int i = 1; i < list1.length; i++)
         {
-            swapPosition = i;
             min = list1[i];
             int temp = min;
             for(int x = i-1; x>0; x--)
@@ -15,18 +13,20 @@ public class InPlaceSorts
                 {
                     list1[x+1] = list1[x];
                     list1[x] = temp;
-                    swapPosition = x;
                 }
             }
         }
+        for(int z = 0; z < list1.length;z++)
+        {
+            System.out.print(list1[z] + ",");
+        }
+        System.out.println();
     }
     public static void selectionSort(double[] list1)
     {
-        int swapPosition = 0;
         double min = 0;
         for(int i = 0; i < list1.length; i++)
         {
-            swapPosition = i;
             min = list1[i];
             for(int x = i+1; x< list1.length; x++)
             {
@@ -35,10 +35,14 @@ public class InPlaceSorts
                     double temp = min;
                     min = list1[x];
                     list1[x] = temp;
-                    swapPosition = x;
                 }
             }
         }
+        for(int z = 0; z < list1.length;z++)
+        {
+            System.out.print(list1[z] + ",");
+        }
+        System.out.println();
     }
     public static void bubbleSort(String[] list1)
     {
@@ -54,6 +58,10 @@ public class InPlaceSorts
                 list1[i+1] = temp;
             }
         }
+        for(int z = 0; z < list1.length;z++)
+        {
+            System.out.print(list1[z] + ",");
+        }
+        System.out.println();
     }
-
 }
