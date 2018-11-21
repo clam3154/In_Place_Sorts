@@ -16,11 +16,6 @@ public class InPlaceSorts
                 }
             }
         }
-        for(int z = 0; z < list1.length;z++)
-        {
-            System.out.print(list1[z] + ",");
-        }
-        System.out.println();
     }
     public static void selectionSort(double[] list1)
     {
@@ -38,11 +33,6 @@ public class InPlaceSorts
                 }
             }
         }
-        for(int z = 0; z < list1.length;z++)
-        {
-            System.out.print(list1[z] + ",");
-        }
-        System.out.println();
     }
     public static void bubbleSort(String[] list1)
     {
@@ -58,10 +48,5 @@ public class InPlaceSorts
                 list1[i+1] = temp;
             }
         }
-        for(int z = 0; z < list1.length;z++)
-        {
-            System.out.print(list1[z] + ",");
-        }
-        System.out.println();
     }
 }

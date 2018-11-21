@@ -8,5 +8,20 @@ public class Runner
               InPlaceSorts.selectionSort(list2);
               String[] list3 = {"b","f","c","e","a","d"};
               InPlaceSorts.bubbleSort(list3);
+              for(int z = 0; z < list1.length;z++)
+              {
+                     System.out.print(list1[z] + ",");
+              }
+              System.out.println();
+              for(int z = 0; z < list2.length;z++)
+              {
+                     System.out.print(list2[z] + ",");
+              }
+              System.out.println();
+              for(int z = 0; z < list3.length;z++)
+              {
+                     System.out.print(list3[z] + ",");
+              }
+              System.out.println();
        }
 }
