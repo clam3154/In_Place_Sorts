@@ -7,7 +7,7 @@ public class InPlaceSorts
         {
             min = list1[i];
             int temp = min;
-            for(int x = i-1; x>0; x--)
+            for(int x = i-1; x>=0; x--)
             {
                 if(list1[x]>temp)
                 {
